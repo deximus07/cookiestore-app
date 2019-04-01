@@ -1,0 +1,15 @@
+#myBody {
+    width: 100%;
+    background-color: grey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img {
+    width: 30%;
+    text-align: center;
+    margin-left: 500px;
+}
+
+h1 {
+    text-align: center;
+}
