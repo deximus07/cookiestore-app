@@ -1,6 +1,8 @@
 #myBody {
     width: 100%;
-    background-color: grey;
+    height: 1000px;
+    background-color: #cccccc;
+    background-image: linear-gradient(orange, red);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -11,5 +13,9 @@ img {
 }
 
 h1 {
+    text-align: center;
+}
+
+h2 {
     text-align: center;
 }
