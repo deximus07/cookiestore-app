@@ -11,15 +11,13 @@ let stores = []
 // making a constructor function to add values to the empty array for line 9 later.
 let CookieStore = function(name, min, max, sold){
     this.storeName = name
-    this.maxCostumers = max
-    this.minCostumers=min
-    this.cookiesPerCostumer = sold
-}
-
-// making a prototype method for the use of the constructor made in line 12. Also made a math function
-CookieStore.prototype.cookieSoldPerHour = function(){
-    let randomNumber = Math.ceil(Math.random() * (this.maxCustomers - this.minCustomers) + this.minCustomers)
-    return randomNumber * this.cookiesPerCostumer
+    this.maxCustomers = max
+    this.minCustomers=min
+    this.cookiesPerCustomer = sold
+    this.cookiesSoldPerHour = function(){
+        let randomNumber = Math.ceil(Math.random() * (this.maxCustomers - this.minCustomers) + this.minCustomers)
+        return randomNumber * this.cookiesPerCustomer
+    }
 }
 
 // Making new references so the empty array from line 9 have values inside it. With all the help of the constructor from line 12.
